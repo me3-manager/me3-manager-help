@@ -12,6 +12,7 @@ ME3 Manager is a simple app for installing and managing mods for FromSoftware ga
 ## What you can do
 
 - Install mods by dragging files/folders into the app
+- Search and install mods directly from **Nexus Mods**
 - Create profiles to switch between different mod setups
 - Manage multiple games and configure game-specific options
 - Quickly enable/disable mods and see status at a glance
@@ -25,6 +26,9 @@ Special thanks to [Gary Tierney ](https://github.com/garyttierney)for creating M
 ## Features
 
 - Drag and drop mods
+- **Nexus Mods Integration**: Search, install, and track updates
+- **Steam Shortcuts**: Add profiles directly to your Steam library
+- **Export Setup**: Create a zip of your current mod layout
 - Enable/disable mods instantly
 - Edit a mod’s configuration file from inside the app
 - Manage profiles (create, switch, delete)

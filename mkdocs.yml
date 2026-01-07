@@ -95,8 +95,7 @@ nav:
       - Managing Mods: user-guide/managing-mods.md
       - Profiles: user-guide/profiles.md
       - Game Management: user-guide/game-management.md
+      - Nexus Mods Integration: user-guide/nexus-integration.md
       - Settings: user-guide/settings.md
       - Troubleshooting: user-guide/troubleshooting.md
   - Blog: blog/index.md
-
-
