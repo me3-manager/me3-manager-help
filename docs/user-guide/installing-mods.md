@@ -52,6 +52,19 @@ ME3 Manager allows you to search and install mods directly from Nexus Mods.
 
 ![Placeholder for Nexus Search](image/nexus/1.gif)
 
+
+!!! note "Free / Non-Premium Accounts"
+    Nexus Mods does not allow automatic file downloads via API for free accounts. Because of this restriction, ME3 Manager will use a browser-assisted fallback:
+    
+    1. A browser window will open automatically to the mod's download page.
+    2. Click the **Slow Download** button in the browser.
+    3. ME3 Manager will detect the downloaded `.zip` file in your **Downloads** folder and proceed with the installation automatically.
+    
+    ![Placeholder for Free Account Fallback](image/nexus/5.gif)
+
+
+
+
 !!! tip "Mod Root Path (Optional)"
     ME3 Manager automatically attempts to find the correct mod folder within an archive. However, if the archive contains multiple potential root folders, the manager will ask you which one to install (e.g., the specific mod folder vs. the entire archive).
 
