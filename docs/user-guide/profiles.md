@@ -40,3 +40,17 @@ After adding the profile, you will need to **restart Steam** for the changes to 
 
 
 ![1759515732733](image/profiles/1759515732733.png)
+
+## Community Profiles
+
+ME3 Manager integrates directly with the community repository to provide curated mod lists and profiles.
+
+1.  Locate the **Search Source** dropdown in the main search bar (set to **Local** by default).
+2.  Switch it to **Community**.
+3.  Browse available profiles and mod lists.
+4.  Click **Install** on any profile to download and add it to your local profiles.
+    - **Note**: Some profiles are full mod packages, while others are simple mod lists.
+
+This feature allows you to quickly set up popular mod configurations without manual setup.
+
+![175951573273](image/profiles/175951573273.gif)
