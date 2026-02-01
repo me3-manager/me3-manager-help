@@ -1,101 +1,50 @@
 # Installing Mods
 
-ME3 Manager supports drag-and-drop installation for various mod types.
+ME3 Manager offers powerful tools to make installing mods easy. The recommended methods are using the built-in **Nexus integration** or **Drag-and-Drop** with automatic metadata parsing.
 
-## Drag and drop
+## 1. Nexus Mods (Recommended)
 
-1. Select a game in the sidebar.
-2. Drag a mod file or folder into the main area.
-3. Follow the prompts to complete the installation.
+The easiest way to install mods is directly through the built-in Nexus Mods integration.
 
-## Supported types
-
-- **DLL files** (.dll)
-- **Mod folders**
-- **Regulation files** (.bin)
-
-### 1) DLL mod example
-
-For example, installing the Storm Control mod:
-
-- Drag the `.dll` file into the drop zone.
-
-![1759437675733](image/installing-mods/1759437675733.gif)
-
-### 2) Package mod example
-
-Some mods include a `.me3` profile and a `mods` folder (e.g., a large overhaul).
-
-- Drag only the `.me3` file, or both the `.me3` file and the folder together.
-- If there is no `.me3` file, drag the folder.
-
-![1759437686655](image/installing-mods/1759437686655.gif)
-
-### 3) Regulation.bin
-
-Some mods contain only a `regulation.bin` file.
-
-- Drag it into the drop zone.
-- **Note**: Only one regulation file can be active at a time.
-
-![1759437695581](image/installing-mods/1759437695581.gif)
-
-## Nexus Mods Installation
-
-ME3 Manager allows you to search and install mods directly from Nexus Mods.
-
-1. Ensure you are [logged in](nexus-integration.md).
-2. Switch the search source to **Nexus** in the search bar.
-3. Type a mod name, ID, or paste a Nexus URL and press **Enter**.
-4. Select a mod to view details in the sidebar.
-5. Click **Install** to download and install the mod automatically.
+1.  Ensure you are [logged in](nexus-integration.md).
+2.  Switch the search source to **Nexus** in the search bar.
+3.  Type a mod name, ID, or paste a Nexus URL and press **Enter**.
+4.  Select a mod to view details in the sidebar.
+5.  Click **Install** to download and install the mod automatically.
 
 ![Placeholder for Nexus Search](image/nexus/1.gif)
 
+### Free vs Premium Accounts
 
-!!! note "Free / Non-Premium Accounts"
-    Nexus Mods does not allow automatic file downloads via API for free accounts. Because of this restriction, ME3 Manager will use a browser-assisted fallback:
-    
-    1. A browser window will open automatically to the mod's download page.
-    2. Click the **Slow Download** button in the browser.
-    3. ME3 Manager will detect the downloaded `.zip` file in your **Downloads** folder and proceed with the installation automatically.
-    
-    ![Placeholder for Free Account Fallback](image/nexus/5.gif)
+- **Premium Users**: Downloads start automatically via the API.
+- **Free Users**: A browser window will open to the download page. Click "Slow Download", and ME3 Manager will detect the file in your **Downloads** folder and install it automatically.
 
+## 2. Drag and Drop
 
+You can install mods by simply dragging files into the manager. This is the best method if you have already downloaded the files manually.
 
+### Smart Nexus Detection
+If you drag a **zip/rar/7z archive** downloaded from Nexus Mods (e.g., `ModName-12345-1-0-123456789.zip`), ME3 Manager will:
 
-!!! tip "Mod Root Path (Optional)"
-    ME3 Manager automatically attempts to find the correct mod folder within an archive. However, if the archive contains multiple potential root folders, the manager will ask you which one to install (e.g., the specific mod folder vs. the entire archive).
+1.  **Parse the filename** to identify the Mod ID.
+2.  **Fetch metadata** (Author, Version, Description) from Nexus automatically (if logged in).
+3.  **Enable update tracking** for the mod.
+4.  **Install** the mod correctly.
 
-    You can also manually specify a **Mod Root Path** in the Nexus details sidebar. This is useful for archives with nested structures, allowing the manager to install only the relevant files and skip everything else. This setting is remembered and applied automatically when updating the mod.
+![12121](image/installing-mods/12121.gif)
 
-    **Example: Grand Merchant - Quick-Start Mod**
-    ```text
-    Grand Merchant - Quick-Start Mod
-    ├── Mod
-    │   ├── event
-    │   ├── map
-    │   ├── msg
-    │   └── script
-    └── modengine2
-        ├── assets
-        ├── bin
-        └── ...
-    ```
-    In this case, the manager will ask if you want to install the `Mod` folder or the entire directory. It is best to choose only the **Mod** folder to keep your installation clean and avoid unnecessary Mod Engine binaries.
+### Supported Drop Items
+- **Archives (.zip, .rar, .7z)**: Installs the mod inside.
+- **Directories**: Installs the folder as a mod.
+- **.me3 Profiles**: Installs the profile and any associated mod data.
+- **DLL files**: Installs as a DLL mod.
+- **Regulation.bin**: Installs game regulation files.
 
-    ![Mod Root Path Selection](image/nexus/4.png)
+## 3. Manual Installation (Advanced)
 
-## Updating Mods
+For advanced users or custom mod structures, you can manually place files, but it is recommended to use Drag and Drop to ensure proper tracking.
 
-Mods installed via Nexus are automatically tracked for updates.
-
-- Select a mod and open the details sidebar to check for updates.
-
-![Placeholder for Nexus Tracking](image/nexus/2.gif)
-
-## Recommended Mod Structure
+## Mod Structure Guide
 
 ME3 Manager works best when a mod includes a `.me3` profile file or follows one of the standard structures below.
 
