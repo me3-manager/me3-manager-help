@@ -22,13 +22,13 @@ This page explains what you see on the screen and what each part does.
 
 ![1759437854123](image/main-interface/1759437854123.png)
 
-- **Game options**: Configure ME3 game options.
-- **Manage Profiles**: Create and switch setups.
-- **Profile settings**: Configure profile-level settings such as custom save files, online mode, and compatibility options.
-- **Open mods folder**: Open the active mods folder.
-- **Add external mod**: Link a DLL mode from outside the current mods folder.
-- **Profile editor**: View or edit the profile file (not recommended to manually edit this file).
-- **Export mods setup**: Export the mod setup with its profile (useful for sharing setups with others).
+1. **Game options**: Configure ME3 game options.
+2. **Profile settings**: Configure profile-level settings such as custom save files, online mode, and compatibility options.
+3. **Open mods folder**: Open the active mods folder.
+4. **Add external Native mod**: Link a DLL mod from outside the current mods folder.
+5. **Add external Package mod**: Link a package mod from outside the current mods folder.
+6. **Profile editor**: View or edit the profile file (not recommended to manually edit this file).
+7. **Export mods setup**: Export the mod setup with its profile (useful for sharing setups with others).
 
 ## Nexus Mods Integration
 
